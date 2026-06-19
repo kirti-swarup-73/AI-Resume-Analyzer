@@ -18,7 +18,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:5000/upload",
+        "https://ai-resume-analyzer-1eg9.onrender.com/upload",
         {
           method: "POST",
           body: formData,
@@ -46,7 +46,7 @@ function App() {
       setAnalysis("Analyzing Resume...");
 
       const response = await fetch(
-        "http://127.0.0.1:5000/analyze",
+        "https://ai-resume-analyzer-1eg9.onrender.com/analyze",
         {
           method: "POST",
           headers: {
